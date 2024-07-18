@@ -1,7 +1,6 @@
-(* Bonjour, dans tout ce code on considère que n (la taille de la matrice plateau ) est un entier positif. 
+(* Dans tout ce code on considère que n (la taille de la matrice plateau ) est un entier positif. 
    N'entrez pas d'entiers négatifs.
-   De plus je vous conseille de copier coller ce code dans tryocaml si vous voulez le tester.
-   Je n'ai pas de limite de n à vous proposer je pense que cela pourrait dépendre de votre ordinateur. Bonne lecture !*)
+   Ce code peut être testé dans tryocaml. *)
 
 (* create_plateau est une fonction de type int -> int array array
   create_plateau est une fonction permettant de créer une matrice "plateau" de taille n * n, n étant passé en paramètre de la fonction. 
@@ -126,7 +125,7 @@ let affiche_plateau plat n =
    si on peut placer une reine on la place et on passe à la colonne d'après si on ne peut pas on va alors rester dans cette même colonne et 
    avancer d'une case vers le haut et chercher la case la plus base sur laquelle il est possible de poser la reine. 
 
-   Bon ça c'est la théorie parce que si vous faites de cette manière depuis le début cela ne fonctionnera pas, ducoup on utilise cet algorithme
+   Ca c'est la théorie parce que si vous faites de cette manière depuis le début cela ne fonctionnera pas, ducoup on utilise cet algorithme
    dans la deuxième "moitié" du tableau et dans la première on place une sorte de "diagonale" de reine en déplacement de cavalier (2 cases vers
    le haut, une case vers la droite (dans le cas de cet algorithme)). Donc dans la première "moitiée" du tableau cette fonction ne cherche rien
    elle sait où placer les reines. Puis quand la fonction ne peut plus poser de reines car elle a atteint le haut du plateau et bien elle 
